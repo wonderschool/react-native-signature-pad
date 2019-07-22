@@ -21,7 +21,7 @@ var content = script =>
     <body>
       <canvas style="margin-left: 0; margin-top: 0;"></canvas>
       <script>
-        window.ReactNativeWebView = window['ReactABI33_0_0NativeWebView'];
+        window.ReactNativeWebView = window.ReactNativeWebView || window['ReactABI33_0_0NativeWebView'];
         ${script}
       </script>
     </body>
